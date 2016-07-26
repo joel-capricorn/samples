@@ -1,0 +1,7 @@
+# FROM alpine:latest
+FROM multiarch/alpine:x86-v3.1
+
+RUN apk update && apk add build-base gcc abuild binutils binutils-doc gcc-doc strace gdb gdb-doc git 
+
+# CFLAGS="-D __rlim64_t=rlim_t '-DTEMP_FAILURE_RETRY(expression)=(__extension__ ({ long int __result; do __result = (long int) (expression); while (__result == -1L && errno == EINTR); __result; })
+# )'" make CC=gcc

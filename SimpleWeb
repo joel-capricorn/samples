@@ -1,0 +1,6 @@
+https://github.com/googlearchive/appengine-cloudsql-native-mysql-demo-python/
+
+Has an example of using webapp2 with CloudSQL when deployed on AppEngine, and
+falling back to MySQL when running locally in a development environment.
+
+

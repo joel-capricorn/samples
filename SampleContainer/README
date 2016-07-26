@@ -1,0 +1,9 @@
+# Sample Container for C style challenges
+
+Builds in 32 bit alpine, sets stack as executable, etc.
+
+Compiles github.com/google/nsjail for sandboxing.
+
+Ideally, levels should be hermetic as possible (so that other players can not
+interfere with other people). 
+

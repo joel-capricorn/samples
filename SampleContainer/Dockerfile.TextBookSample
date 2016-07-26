@@ -1,0 +1,8 @@
+FROM multiarch/alpine:x86-v3.1
+
+ADD src/output/nsjail /app/nsjail
+ADD src/output/TextBookSample /app/TextBookSample
+
+CMD [ "/app/nsjail", "-Ml", "--port", "31330", "--chroot", "/", "--hostname", "TextBookSample", "--user", "nobody", "--group", "nobody", "--persona_read_implies_exec", "--persona_addr_no_randomize", "--persona_addr_compat_layout", "--disable_proc", "--", "/app/TextBookSample" ]
+EXPOSE 31330
+
